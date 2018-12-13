@@ -11,4 +11,4 @@ matrix:
     - python: '3.6'
       env: INPUT='Sara word=\'Love you\''
 
-      script: python ./test.py $INPUT
+script: python ./test.py $INPUT
