@@ -2,11 +2,13 @@ language: python
 dist: xenial
 python:
   - '2.7'
-  - pypy
+  - '3.6'
 
 matrix:
   include:
     - python: '2.7'
       env: INPUT='--Edwin word=\'Hello World\''
+    - python: '3.6'
+      env: INPUT='Sara word=\'Love you\''
 
-script: python ./test.py $INPUT
+      script: python ./test.py $INPUT
