@@ -9,4 +9,4 @@ matrix:
     - python: '2.7'
       env: INPUT='--Edwin word=\'Hello World\''
 
-script: env $EXTRA_TESTS ./test.py $INPUT
+script: python ./test.py $INPUT
